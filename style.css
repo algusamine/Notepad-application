@@ -1,0 +1,299 @@
+.hidden{
+  display: none;
+}
+.block{
+  display: block;
+}
+body {
+  background-color: #e5e5f7;
+}
+header {
+  padding-top: 100px;
+}
+#header-h1 {
+  display: flex;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  background: linear-gradient(220deg, rgb(8, 197, 197), rgb(81, 81, 230));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: center;
+}
+#main-h1 {
+  display: flex;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  justify-content: center;
+}
+.reset-password-title, .try-again-title, .signup-form-title {
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  width: 400px;
+  padding: 10px;
+  position: absolute;
+  margin-top: -200px;
+}
+.signup-form-title{
+  margin-bottom: 170px;
+  margin-left: 80px;
+}
+.try-again{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(247, 207, 214);
+  font-size: 15px;
+  border-radius: 5px;
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 120px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.reset-link-sent, .success{
+  font-family:  Helvetica, Arial, sans-serif;
+  width: 390px;
+  margin-top: 0px;
+  line-height: 30px;
+  color: green;
+  text-align: center;
+}
+
+.email-phone {
+  display: flex;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  width: 390px;
+  position: absolute;
+  margin-top: -100px;
+  line-height: 20px;
+}
+.log-in{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+#log-in-div {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 11%), 0 8px 16px rgb(0 0 0 / 11%);
+}
+.sign-up-form, .log-in-input, #first-name-input, #last-name-input, #phone-email-input, #password-input{
+  display: flex;
+  margin: 15px 15px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 50px;
+  width:300px;
+  padding: 0 8px;
+}
+#rest-password-input {
+  width: 360px;
+  margin-top: 20px;
+  margin-left: -80px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 50px;
+  width: 300px;
+  padding: 0 8px;
+}
+.log-in-btn, #send, #create-btn{
+  display: flex;
+  margin: 15px 10px;
+  border:none;
+  border-radius: 5px;
+  height: 50px;
+  width:317px;
+  background: linear-gradient(220deg, rgb(8, 197, 197), rgb(81, 81, 230));
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+#create-btn{
+  margin-left: 15px;
+}
+#cancel-note-btn, #save-note-btn, #log-out{
+  border:none;
+  border-radius: 5px;
+  height: 50px;
+  width:317px;
+  background: linear-gradient(220deg, rgb(8, 197, 197), rgb(81, 81, 230));
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+#log-out{
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 85%;
+  width: 150px;
+  position: relative;
+}
+#log-out:hover{
+  color: #1d2129;
+}
+#cancel-note-btn {
+  margin: 15px 150px 10px 120px;
+}
+#edit-note-btn, #delete-note-btn{
+  width:118px;
+  height: 40px;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  background: linear-gradient(220deg, rgb(8, 197, 197), rgb(81, 81, 230));
+  color: white;
+  cursor: pointer;
+}
+#edit-note-btn {
+  margin: 30px 70px 30px 0; 
+}
+#send {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -80px;
+}
+.reset-password, .create-new-acc {
+  display: flex;
+  margin: 15px 15px;
+  border:none;
+  height: auto;
+  color: rgb(11, 99, 182);
+  font-size: 17px;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.reset-password:hover, .create-new-acc:hover {
+  text-decoration: underline;
+  color: rgb(5, 56, 104);
+}
+.log-in-btn:hover, #cancel-note-btn:hover, #send:hover, #create-btn:hover, #edit-note-btn:hover{
+  background: rgb(9, 87, 160);
+}
+#delete-note-btn:hover {
+  background: red;
+}
+#save-note-btn:hover {
+  background: rgb(28, 160, 28);
+}
+.email-phone-msg-err, .pw-msg-err, .first-name-msg, .last-name-msg, .email-requirement, .weak-pwd{
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: red;
+  margin-top: -4%;
+  margin-left: 15px;
+}
+ #search{
+  display: block;
+  background: linear-gradient(220deg, rgb(8, 197, 197), rgb(81, 81, 230));
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#main-h1 {
+  display: flex;
+  color: #e5e5f7;
+  padding-bottom: 10px;
+  padding-left: 60px
+}
+#search-input, #note-title, #text-area{
+  display: flex;
+  margin: 15px 80px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  height: 50px;
+  width:300px;
+  padding: 0 8px;
+};
+#search-input{
+  margin-left: 10px;
+}
+.display-note {
+  overflow: scroll;
+  padding: 0px 20px;
+  border-bottom: 3px dashed white;
+}
+ #notes{ 
+  display: inline-block;
+  height: 750px;
+  overflow: scroll;
+  background-color: rgb(247, 238, 235);
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: white;
+  padding-top: 20px;
+  width: 72.5%;
+}
+#display-notes {
+  width: 25.2%;
+  height: 750px;
+  overflow: scroll;
+  float: left;
+  background-color: rgb(247, 238, 235);
+  border-style: dashed;
+  border-color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 20px;
+  color:gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#side-text-area{
+  display: flex;
+  height: 300px;
+  width: 300px;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+}
+#note-side-title{
+  display: flex;
+  height: 50px;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+}
+#text-area {
+  height: 550px;
+  width:850px;
+}
+#note-title {
+  width:850px;
+}
+.date {
+  margin-left: 40px;
+  margin-bottom: 0 
+}
+#search-div {
+  border: 1px solid #dddfe2;
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}

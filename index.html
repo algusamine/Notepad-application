@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Note-Pad</title>
+</head>
+<body>
+    <header>
+        <h1 id="header-h1">Notepad</h1>
+        <p class="log-in">Write your notes and keep them secured</p>
+        <div id="log-in-div">
+            <form class="log-in-form">
+                <input id="email" class="log-in-input" type="text" placeholder="Email or Phone Number" required>
+                <p id="email-phone-msg-err" class="hidden">Account doesn't exist</p>
+                <input id="password" class="log-in-input" type="password" placeholder="Password" required>
+                <p id="pw-msg-err"class="hidden">The password you have enetered is incorrect</p>
+                <button type="submit" class="log-in-btn">Log In</button>
+                <a href = './' class="create-new-acc">Create New Account</a>
+                <a href="./" id="reset-password" class="hidden">Forgot Password?</a>
+            </form>
+            <h2 id="reset-password-title" class="hidden">Reset Your Password</h2>
+            <h2 id="try-again-title" class="hidden">Try again</h2>
+            <p id="email-phone" class="hidden">Please enter an email or a phone number to reset your password.</p>
+            <p id="reset-link-sent" class="hidden">A reset link was sent to your email. Please check your email to reset your password.</p>
+            <p id="try-again" class="hidden">The Email or the Phone Number you have entered doesn't match with our records. Please double check and try again</p>
+            <form id="reset-pw-form" class= "hidden">
+                <input id="rest-password-input" placeholder="Email or Phone Number..." required>
+                <button id="send">Send</button>
+                <p class="reset-pw-no-acct hidden">It doesn't seem that uou have an account with us. <span><a href = './' class="create-new-acc">Create New Account?</a></span></p>
+            </form>
+            <h2 id="signup-form-title" class="hidden">Create New Account</h2>
+            <form id="sign-up-form" class="hidden">
+                <input placeholder="First Name" id="first-name-input" type="text" required>
+                <p id="first-name-msg" class="hidden">First Name can not be longer than 50 characters</p>
+                <input placeholder="Last Name" id="last-name-input" type="text" required>
+                <p id="last-name-msg" class="hidden">Last Name can not be longer than 50 characters</p>
+                <input placeholder="Email or Phone Number" id="phone-email-input" required>
+                <p id="email-requirement" class="hidden">This email had already been used</p>
+                <input placeholder="Password" type="password" id="password-input" required>
+                <p id="weak-pwd" class= "hidden">Weak password!</p>
+                <button id="create-btn">Create</button>
+            </form>
+            <p id="success" class="hidden">You have successfully created an account. Please check your Email to validate your account</p>
+    </div>
+    </header>
+    <main class="hidden">
+        <div id="search">
+            <button id="log-out"><i class="fas fa-sign-out-alt"></i>Log Out</button>
+            <h1 id="main-h1">Welcome to your personal Notepad!</h1>
+            <form action="" id="search-form-header">
+                <input type="text" id="search-input" placeholder="Search for notes...">
+            </form>
+        </div>
+        <div id="notes">
+            <form action="" id="note-form">
+                <input type="text" id="note-title" placeholder="Title...">
+                <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Write a note..."></textarea>
+                <button id="cancel-note-btn">Cancel</button>
+                <button id="save-note-btn">Save</button>
+            </form>
+        </div>
+        <div id="display-notes">-----Your notes will be displayed here-----</div>
+    </main>
+
+</body>
+</html>
